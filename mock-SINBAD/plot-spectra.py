@@ -4,7 +4,7 @@ import sys
 
 # brings statepoint file from command line argument into the script
 # open the results file
-results =  sys.argv[1] 
+results =  openmc.StatePoint(sys.argv[1]) 
 
 #extracts the tally values from the simulation results
 cell_tally = results.get_tally(name='energy_spectra')
