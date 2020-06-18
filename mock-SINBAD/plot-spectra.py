@@ -3,10 +3,8 @@ import plotly.graph_objects as go
 import sys
 
 # brings statepoint file from command line argument into the script
-results_filename = sys.argv[1] 
-
 # open the results file
-results = openmc.StatePoint(results_filename)
+results =  sys.argv[1] 
 
 #extracts the tally values from the simulation results
 cell_tally = results.get_tally(name='energy_spectra')
