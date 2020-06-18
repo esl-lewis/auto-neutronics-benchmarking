@@ -266,7 +266,7 @@
   </filter>
 
   <filter id="2" type="surface">
-    <bins>34</bins>
+    <bins>6</bins>
   </filter>
 
   <tally id="3" name="mesh">
