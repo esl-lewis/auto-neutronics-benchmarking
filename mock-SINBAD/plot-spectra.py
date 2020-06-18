@@ -7,7 +7,7 @@ import sys
 results =  openmc.StatePoint(sys.argv[1]) 
 
 #extracts the tally values from the simulation results
-cell_tally = results.get_tally(name='3')
+cell_tally = results.get_tally(name='mesh')
 cell_tally = cell_tally.get_pandas_dataframe()
 cell_tally_values = cell_tally['mean']
 cell_tally_std_dev = cell_tally['std. dev.']
