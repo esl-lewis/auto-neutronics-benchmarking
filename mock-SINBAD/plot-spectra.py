@@ -7,7 +7,7 @@ import sys
 results =  openmc.StatePoint(sys.argv[1]) 
 
 #extracts the tally values from the simulation results
-cell_tally = results.get_tally(name='energy_spectra')
+cell_tally = results.get_tally(name='3')
 cell_tally = cell_tally.get_pandas_dataframe()
 cell_tally_values = cell_tally['mean']
 cell_tally_std_dev = cell_tally['std. dev.']
@@ -49,7 +49,7 @@ fig.update_layout(title='Neutron energy spectra',
 
 fig.write_html("neutron_spectra.html")
 try:
-    fig.write_html("/opt/openmc/results/blanket_neutron_spectra.html")
+    fig.write_html("/my_openmc_workshop/neutron_spectra.html")
 except (FileNotFoundError, NotADirectoryError):  # for both inside and outside docker container
     pass
 
