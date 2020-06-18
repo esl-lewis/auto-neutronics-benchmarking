@@ -1,8 +1,7 @@
 <materials>
   <material id="1">
     <density units="g/cc" value="7.85" />
-    <nuclide name="C12" wo="0.0016" />
-    <nuclide name="P31" wo="0.0002" />
+    <nuclide name="P31" wo="0.0018" />
     <nuclide name="Mn55" wo="0.0089" />
     <nuclide name="Fe54" wo="0.05965533970496963" />
     <nuclide name="Fe56" wo="0.9030162108079198" />
