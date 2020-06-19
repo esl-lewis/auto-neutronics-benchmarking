@@ -12,6 +12,8 @@ cell_tally = cell_tally.get_pandas_dataframe()
 cell_tally_values = cell_tally['mean']
 cell_tally_std_dev = cell_tally['std. dev.']
 
+# extracts values for plot
+energy_bins = openmc.mgxs.GROUP_STRUCTURES['CCFE-709']
 
 # this section plots the results
 fig = go.Figure()
