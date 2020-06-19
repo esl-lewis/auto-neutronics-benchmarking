@@ -1,7 +1,7 @@
 <settings>
   <run_mode>fixed source</run_mode>
   <survival_biasing>true</survival_biasing>
-  <particles>10000000</particles>
+  <particles>1000</particles>
   <batches>10</batches>
   <source strength="1.0">
     <space type="point">
