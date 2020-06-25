@@ -23,6 +23,6 @@
   <material id="3">
     <density units="g/cc" value="6.4" />
     <nuclide ao="0.211" name="Fe54" />
-    <nuclide ao="0.789" name="Fe56" />
+    <nuclide ao="0.789" name="U235" />
   </material>
 </materials>
